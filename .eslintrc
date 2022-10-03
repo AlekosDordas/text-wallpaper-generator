@@ -21,11 +21,6 @@
         "codeFrame": false
     },
     "rules": {
-        
-        "linebreak-style": [
-            "error",
-            "unix"
-        ],
         "quotes": [
             "error",
             "single"

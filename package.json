@@ -21,12 +21,7 @@
   "scripts": {
     "start": "webpack-dev-server --config conf/webpack.dev.js",
     "build": "webpack --env=prod --progress --profile --colors",
-    "lint": "eslint ./src/**.js",
-    "coverage": "jest --coverage --config=conf/jest.config.js",
-    "test": "jest --config=conf/jest.config.js",
-    "test:watch": "jest --watch",
-    "upload": "cd dist && s3-upload ../conf/aws-upload.conf.js",
-    "deploy": "npm run build && npm run upload"
+    "lint": "eslint ./src/**.js"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.1.0",

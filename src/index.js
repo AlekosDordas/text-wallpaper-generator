@@ -84,12 +84,12 @@ const menuCallbacks: MenuCallbacks = {
 
 menu = new Menu(menuCallbacks);
 menu.onStart({
-  width: window.screen.width,
-  height: window.screen.height,
+  width: 680,
+  height: 700,
   scale: window.devicePixelRatio || 1,
   textSize: 24,
   textColor: colors.flat_clouds,
-  backgroundColor: colors.mac_7,
+  backgroundColor: colors.palette0_3,
 });
 
 updateSelectionStyles();
@@ -112,4 +112,5 @@ const intro = new Intro({
 
 document.addEventListener('DOMContentLoaded', () => {
   intro.onStart();
+  intro.onCompleteHandler();
 });

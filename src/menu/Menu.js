@@ -114,7 +114,7 @@ export default class Menu {
       this._handleOnImageSizeChangeRequested,
       () => {
         imageSizeWindow.width = this.width;
-        imageSizeWindow.height = this.height;
+        imageSizeWindow.height = Math.floor(utils.getElement('wallpaper').getBoundingClientRect().height);
         imageSizeWindow.scale = this.scale;
       },
     );
@@ -208,7 +208,7 @@ export default class Menu {
     await utils.sleep(500);
     return await this._callbacks.onGenerateCanvas(
       this.width,
-      this.height,
+      Math.floor(utils.getElement('wallpaper').getBoundingClientRect().height),
       this.scale,
     );
   };
